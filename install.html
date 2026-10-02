@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#08111e">
+  <meta name="description" content="StarFly 免費版與 Pro 版 iPhone 安裝教學：使用 Windows 與 Sideloadly 簽署 IPA，完成開發者信任與裝置設定。">
+  <title>StarFly 安裝指南｜免費版與 Pro 版 IPA 安裝流程</title>
+  <link rel="icon" href="assets/starfly-icon.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="typography.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">跳至教學內容</a>
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="StarFly 官網首頁">
+      <img src="assets/starfly-icon.png" alt="StarFly 圖示">
+      <span>STARFLY <small>INSTALL GUIDE</small></span>
+    </a>
+    <nav aria-label="主要導覽">
+      <a href="index.html">官網首頁</a>
+      <a href="index.html#downloads">下載專區</a>
+      <a href="#prepare">安裝前準備</a>
+      <a href="#install">安裝流程</a>
+      <a href="#network">連線設定</a>
+      <a href="#help">常見問題</a>
+    </nav>
+    <a class="top-contact" href="https://line.me/R/ti/p/@689whbkl" target="_blank" rel="noopener noreferrer">官方 LINE <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main id="main">
+    <section class="hero wrap" id="top">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="live-dot"></span> iPHONE × WINDOWS · 完整圖文流程</div>
+        <h1>把 StarFly<br><em>安裝到 iPhone。</em></h1>
+        <p class="hero-lede">從未簽署 IPA、Sideloadly，到 iPhone 開發者信任與 LocalDevVPN 連線設定，一步一步完成。</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#prepare">開始安裝 <span aria-hidden="true">↓</span></a>
+          <a class="button button-quiet" href="https://sideloadly.io/" target="_blank" rel="noopener noreferrer">Sideloadly 官方網站 <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="hero-note"><span class="note-icon">i</span><span>本指南使用你自己的 Apple ID 簽署。Apple ID 密碼與雙重認證碼<strong>只輸入在你自行開啟的 Sideloadly</strong>，不要傳給任何人。</span></div>
+      </div>
+      <div class="hero-art" aria-label="StarFly 安裝流程示意">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="hero-glow"></div>
+        <div class="phone-card">
+          <div class="phone-top"><span>STARFLY</span><span class="phone-signal">● ● ●</span></div>
+          <img src="assets/starfly-icon.png" alt="StarFly App 圖示" class="phone-icon">
+          <div class="phone-title">StarFly</div>
+          <div class="phone-subtitle">安裝完成後，先完成授權與裝置配對</div>
+          <div class="phone-status"><span></span> READY TO SET UP</div>
+        </div>
+        <div class="floating-tag tag-sign"><span>01</span> Sign & Install</div>
+        <div class="floating-tag tag-connect"><span>02</span> Connect Securely</div>
+        <div class="hero-caption">INSTALLATION · PAIRING · LOCAL TUNNEL</div>
+      </div>
+      <div class="hero-bottom"><span>建議預留 10–15 分鐘</span><span>需要 Windows 電腦與 iPhone 傳輸線</span><span>繁體中文 · 個人側載教學</span></div>
+    </section>
+
+    <section class="notice-strip wrap" aria-label="重要說明">
+      <div class="notice-mark">!</div>
+      <div><strong>先分清兩種帳號資訊</strong><p>Apple ID 是 Sideloadly 簽署 App 用的帳號；StarFly Pro 授權碼是 Pro 版啟用用的另一組資料。免費版不需要購買 Pro 授權。不要把 Apple ID 密碼、驗證碼或完整授權碼貼到公開社群。</p></div>
+      <a href="index.html#pro-license">Pro 授權碼購買資訊 <span aria-hidden="true">↗</span></a>
+    </section>
+
+    <section class="section wrap" id="prepare">
+      <div class="section-heading">
+        <div><div class="eyebrow">BEFORE YOU START</div><h2>安裝前，先準備好這些</h2></div>
+        <p>符合條件再開始，可以減少 Sideloadly 找不到手機或安裝後無法開啟的狀況。</p>
+      </div>
+      <div class="prep-grid">
+        <article class="prep-card"><span class="prep-number">01</span><div class="prep-icon"></div><h3>iPhone 與 iOS</h3><p>StarFly 目前要求 <strong>iOS 26 或更新版本</strong>。請使用實體 iPhone，準備好解鎖密碼。</p></article>
+        <article class="prep-card"><span class="prep-number">02</span><div class="prep-icon">⌘</div><h3>Windows 電腦與傳輸線</h3><p>使用可傳輸資料的 USB 線。第一次連接時，iPhone 可能詢問是否信任這部電腦。</p></article>
+        <article class="prep-card"><span class="prep-number">03</span><div class="prep-icon">⇩</div><h3>選擇 StarFly 版本</h3><p>免費版與 Pro 安裝檔都可直接下載；Pro 啟用需要另外購買授權碼。</p><a class="button button-primary" href="downloads/StarFly-unsigned.ipa" download="StarFly-unsigned.ipa">下載免費版 <span aria-hidden="true">↓</span></a><a class="button button-quiet" href="downloads/StarFly-Pro-unsigned.ipa" download="StarFly-Pro-unsigned.ipa">下載 Pro IPA <span aria-hidden="true">↓</span></a><small class="edition-hint">所有 IPA 都需要先由 Sideloadly 簽署。</small></article>
+        <article class="prep-card"><span class="prep-number">04</span><div class="prep-icon">◎</div><h3>自己的 Apple ID</h3><p>由 Sideloadly 使用你的帳號簽署。免費 Apple ID 簽署通常每 7 天需更新；這與 Pro 授權是兩回事。</p></article>
+      </div>
+      <div class="small-callout"><span class="check">✓</span><span><strong>Windows 元件提醒：</strong>Sideloadly 官方目前要求 Apple 網站提供的 Windows 版 iTunes 與 iCloud；若手機偵測不到，先查看<a href="https://sideloadly.io/" target="_blank" rel="noopener noreferrer">官方安裝說明</a>，確認 Apple 元件版本、信任此電腦並重開機。Microsoft Store 版 iTunes 可能造成連線問題；不要為了安裝而關閉防毒軟體。</span></div>
+    </section>
+
+    <section class="section section-dark" id="install">
+      <div class="wrap">
+        <div class="section-heading">
+          <div><div class="eyebrow">01 — 04 · SIGN & INSTALL</div><h2>用 Sideloadly 安裝 IPA</h2></div>
+          <p>以下步驟依 Windows 版 Sideloadly 編排；不同版本的按鈕位置可能略有差異。</p>
+        </div>
+
+        <div class="steps">
+          <article class="step-row">
+            <div class="step-index">01</div>
+            <div class="step-body"><div class="step-label">DOWNLOAD · 下載工具與 IPA</div><h3>下載 Sideloadly 與選擇版本</h3><p>從 <a href="https://sideloadly.io/" target="_blank" rel="noopener noreferrer">Sideloadly 官方網站</a>下載並安裝 Windows 版工具。免費版與 Pro IPA 都可由官網下載。Pro 需另購啟用授權碼，請由官網上的官方 LINE 洽購。</p><a class="button button-primary" href="downloads/StarFly-unsigned.ipa" download="StarFly-unsigned.ipa">下載免費版 IPA <span aria-hidden="true">↓</span></a> <a class="button button-quiet" href="downloads/StarFly-Pro-unsigned.ipa" download="StarFly-Pro-unsigned.ipa">下載 Pro IPA <span aria-hidden="true">↓</span></a><div class="step-tip">IPA 尚未簽署，不能直接在 iPhone 開啟；請依後續步驟用 Sideloadly 簽署。Pro 授權碼須另行購買，請前往<a href="index.html#pro-license">官網授權碼購買區</a>聯絡官方 LINE。</div></div>
+            <figure class="step-visual compact-figure"><img src="assets/01-ipa-file.png" alt="Windows 檔案總管中的 StarFly IPA 檔案示意"><figcaption>免費版：StarFly-unsigned.ipa；Pro：StarFly-Pro-unsigned.ipa。每次安裝前確認檔名與版本。</figcaption></figure>
+          </article>
+
+          <article class="step-row">
+            <div class="step-index">02</div>
+            <div class="step-body"><div class="step-label">CONNECT · 連接 iPhone</div><h3>解鎖手機，再接上 USB</h3><p>保持 iPhone 解鎖並連接電腦。如果手機出現「信任此電腦」，確認是自己的電腦後點「信任」，再輸入 iPhone 密碼。回到 Sideloadly，確認上方裝置欄選到你的 iPhone。</p><div class="step-tip">裝置清單空白時：換一條支援資料傳輸的線、重新插拔，並確認 iPhone 已解鎖。</div></div>
+            <figure class="step-visual"><img src="assets/02-sideloadly.png" alt="Sideloadly 顯示已選擇 iPhone 與 StarFly IPA，狀態 Done"><figcaption>完成後狀態會顯示 Done。示意畫面中的帳號已遮蔽。</figcaption></figure>
+          </article>
+
+          <article class="step-row">
+            <div class="step-index">03</div>
+            <div class="step-body"><div class="step-label">SIGN · 使用自己的 Apple ID 簽署</div><h3>放入所選 IPA，按 Start 開始</h3><ol class="compact-list"><li>把剛才下載的免費版或 Pro 版 IPA 拖到 Sideloadly 視窗，或按左側 IPA 圖示選取。</li><li>在 Apple ID 欄位輸入你自己的帳號，再確認裝置欄是正確的 iPhone。</li><li>按 <strong>Start</strong>，依畫面提示完成 Apple 登入與雙重認證。</li><li>等到狀態顯示 <strong>Done</strong>，再從 iPhone 主畫面尋找 StarFly。</li></ol><div class="step-tip step-warning">Apple 驗證碼只在你自己的 Sideloadly 登入流程中輸入。官方 LINE 客服不需要你的 Apple ID 密碼或驗證碼。</div></div>
+            <div class="mini-panel"><span class="mini-icon">↻</span><strong>免費 Apple ID 的期限</strong><p>Sideloadly 官方說明：免費帳號簽署的 App 通常可使用 7 天。可在 Sideloadly 設定自動重新簽署；自動刷新仍需要電腦能透過 USB 或已設定的 Wi‑Fi 偵測到裝置。若 App 失效，使用相同 Apple ID 重新安裝最新版。</p></div>
+          </article>
+
+          <article class="step-row">
+            <div class="step-index">04</div>
+            <div class="step-body"><div class="step-label">DEVELOPER MODE · 開啟開發者模式</div><h3>照文字步驟完成啟用與配對</h3><ol class="compact-list"><li>先在 StarFly「裝置設定」點「配對此 iPhone」開始配對，並依 App 提示前往設定。</li><li>打開「設定 → 隱私權與安全性 → 開發者模式」，開啟開關並依提示重新啟動 iPhone。</li><li>重新開機後，在確認畫面點「啟用」，再輸入 iPhone 解鎖密碼。</li><li>回到「設定 → 隱私權與安全性 → 開發者模式」，在「其他裝置」下點「Pair with StarFly」（部分介面會顯示「與 StarFly 配對」）。</li><li>依 iPhone 畫面輸入 StarFly 顯示的六位數配對碼並確認；如出現本機網路權限提示，請允許 StarFly 存取。</li></ol><div class="step-tip">如果一開始看不到「開發者模式」，先讓 StarFly 的配對流程保持啟動，再回設定查看。配對期間不要關閉 StarFly，並保持 Developer Mode 開啟。</div><div class="step-tip step-warning">開發者模式會降低部分裝置安全保護；只在安裝並使用你信任的 App 時開啟。</div></div>
+            <figure class="step-visual devmode-visual"><img src="assets/06-developer-mode-enabled.png" alt="iPhone 隱私權與安全性中的開發者模式設定畫面"><figcaption>實際操作請依文字完成重新啟動與確認。</figcaption></figure>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section wrap" id="trust">
+      <div class="section-heading">
+        <div><div class="eyebrow">05 · TRUST ON IPHONE</div><h2>第一次開啟前，信任簽署者</h2></div>
+        <p>若跳出「未受信任的開發者」，先取消提示，再到設定中信任剛才用來簽署的開發者。</p>
+      </div>
+      <div class="trust-layout">
+        <div class="trust-steps">
+          <div class="trust-step"><span>1</span><div><strong>先點「取消」</strong><p>不要重複點開 App；返回 iPhone 主畫面。</p></div></div>
+          <div class="trust-step"><span>2</span><div><strong>打開 VPN 與裝置管理</strong><p>「設定 → 一般 → VPN 與裝置管理」。</p></div></div>
+          <div class="trust-step"><span>3</span><div><strong>選取 Developer App</strong><p>在「開發者 App」區域，點選這次 Sideloadly 簽署所使用的開發者帳號。</p></div></div>
+          <div class="trust-step"><span>4</span><div><strong>只信任你剛才使用的帳號</strong><p>按「信任……」並在確認視窗再次允許。完成後回主畫面開啟 StarFly。</p></div></div>
+          <div class="step-tip step-warning">只對你認得、而且與自己剛才使用的 Apple ID 相符的簽署者按「信任」。不要照抄別人的信任畫面上的帳號或團隊代碼。</div>
+        </div>
+        <div class="trust-gallery">
+          <figure><img src="assets/08-untrusted-developer-redacted.png" alt="iPhone 首次開啟時的未受信任開發者提示，帳號與團隊代碼已遮蔽"><figcaption>首次開啟若出現此提示，先點「取消」</figcaption></figure>
+          <figure><img src="assets/03-settings-general.png" alt="iPhone 設定頁面，顯示一般選項"><figcaption>設定首頁：進入「一般」</figcaption></figure>
+          <figure><img src="assets/04-vpn-device-management.png" alt="iPhone 一般設定中的 VPN 與裝置管理選項"><figcaption>一般頁面：找到「VPN 與裝置管理」</figcaption></figure>
+          <figure><img src="assets/09-developer-app-redacted.png" alt="開發者 App 清單，帳號已遮蔽"><figcaption>選擇剛才使用的 Developer App 帳號</figcaption></figure>
+          <figure><img src="assets/10-trust-developer-redacted.png" alt="iPhone 信任開發者確認畫面，個人帳號已遮蔽"><figcaption>確認簽署來源正確後，點「信任」</figcaption></figure>
+          <figure><img src="assets/11-trust-confirmation-redacted.png" alt="iPhone 再次確認是否允許開發者 App，個人帳號已遮蔽"><figcaption>依系統提示再次允許，然後返回 StarFly</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tint" id="activate">
+      <div class="wrap activation-layout">
+        <div><div class="eyebrow">06 · ACTIVATE STARFLY</div><h2>完成首次設定</h2><p class="section-intro">免費版可直接進入 App。StarFly Pro 首次開啟時，請輸入 Pro 授權碼並啟用此設備；授權碼與 Apple ID 不同，也不會由 Sideloadly 產生。</p><a class="button button-line" href="index.html#pro-license">查看官網授權碼購買資訊 <span aria-hidden="true">↗</span></a><div class="privacy-chip">🔒 Pro 授權碼請私訊，不要貼在公開留言</div></div>
+        <div class="activation-card"><div class="activation-card-head"><img src="assets/starfly-icon.png" alt=""><div><span>STARFLY</span><strong>首次設定清單</strong></div></div><figure class="setup-reference"><img src="assets/05-device-setup.png" alt="StarFly 裝置設定畫面，包含配對此 iPhone 與連線前準備"><figcaption>StarFly 裝置設定畫面參考</figcaption></figure><figure class="setup-reference setup-reference-compact"><img src="assets/07-pairing-settings-redacted.png" alt="iPhone Developer Mode 頁面中的 Pair with StarFly 選項，裝置名稱已遮蔽"><figcaption>配對項目會出現在 iPhone 的 Developer Mode 設定中</figcaption></figure><ul><li><span>01</span>免費版直接開始；Pro 輸入授權碼啟用</li><li><span>02</span>安裝並開啟 LocalDevVPN</li><li><span>03</span>在「裝置設定」點「配對此 iPhone」開始配對</li><li><span>04</span>依文字步驟開啟 Developer Mode，重新啟動後確認啟用</li><li><span>05</span>在設定中選「Pair with StarFly」，輸入 StarFly 顯示的配對碼</li><li><span>06</span>允許 StarFly 使用「本機網路」，確認 LocalDevVPN 已連線</li></ul><div class="activation-foot">配對紀錄儲存在此 iPhone 的鑰匙圈中；StarFly 不會上傳配對檔。</div></div>
+      </div>
+    </section>
+
+    <section class="section wrap" id="network">
+      <div class="section-heading">
+        <div><div class="eyebrow">07 · LOCAL CONNECTION</div><h2>安裝並連接 LocalDevVPN</h2></div>
+        <p>StarFly 透過 LocalDevVPN 在你的 iPhone 上建立本機連線通道；它不是用來替代一般上網 VPN 的服務。</p>
+      </div>
+      <div class="vpn-layout">
+        <div class="vpn-card">
+          <div class="vpn-card-top"><div class="vpn-emblem">⌁</div><span class="store-badge">APP STORE</span></div>
+          <div class="vpn-card-title">LocalDevVPN</div><p>由 App Store 安裝，確認開發者與 App 名稱正確。</p>
+          <a class="button button-primary button-full" href="https://apps.apple.com/app/localdevvpn/id6755608044" target="_blank" rel="noopener noreferrer">在 App Store 查看 LocalDevVPN ↗</a>
+          <span class="vpn-footnote">App Store 官方連結 · 免費下載（以商店頁面為準）</span>
+        </div>
+        <div class="vpn-instructions"><div class="vpn-line"><span>1</span><div><strong>安裝後開啟 LocalDevVPN</strong><p>第一次連線時，iOS 可能詢問是否允許新增 VPN 設定；確認這是你剛從 App Store 安裝的 LocalDevVPN，再依系統提示操作。</p></div></div><div class="vpn-line"><span>2</span><div><strong>啟用本機通道</strong><p>回到 LocalDevVPN，啟動它的連線並確認狀態為已連線。開始 StarFly 位置工作階段期間，保持通道啟用。</p></div></div><div class="vpn-line"><span>3</span><div><strong>回到 StarFly 完成配對或重試</strong><p>如果 StarFly 顯示「仍在連線」，先確認 LocalDevVPN 已連線，再點「再試一次」。Wi‑Fi 使用者不要誤選行動數據流程。</p></div></div><div class="subtle-note">若同時使用其他 VPN、防火牆或公司管理設定，可能影響本機連線。只在你了解網路影響且允許的情況下暫停其他 VPN 做比較測試。</div></div>
+      </div>
+    </section>
+
+    <section class="section section-dark shortcut-section" id="shortcut">
+      <div class="wrap shortcut-layout">
+        <div><div class="eyebrow">OPTIONAL · MOBILE DATA</div><h2>行動數據流程捷徑<br><em>Wi‑Fi 使用者可略過</em></h2><p>這個 iCloud 捷徑叫「StarFly 網路流程」。它配合 StarFly 的行動數據連線引導，在需要時切換行動數據關閉／重新開啟，接著返回 App 繼續連線。</p><a class="button button-primary" href="https://www.icloud.com/shortcuts/21f20ca0ad8946f9ade191c02793a96c" target="_blank" rel="noopener noreferrer">取得 StarFly 網路流程捷徑 ↗</a><div class="shortcut-warning">「設定行動數據」是否可用，可能受 iOS、電信商或裝置管理政策影響；若動作無法執行，請依 StarFly 畫面手動完成步驟。</div></div>
+        <div class="shortcut-steps"><div class="shortcut-step"><span>01</span><div><strong>在 iPhone 開啟 iCloud 捷徑連結</strong><p>按「取得捷徑／加入捷徑」，並在「捷徑」App 確認已加入，名稱保持「StarFly 網路流程」。</p></div></div><div class="shortcut-step"><span>02</span><div><strong>讓 StarFly 使用這個名稱</strong><p>回 StarFly，開啟「控制中心 → 捷徑流程」，輸入完全相同的名稱，再開啟「需要時自動執行捷徑」。</p></div></div><div class="shortcut-step"><span>03</span><div><strong>只在實際使用 4G／5G 時跟著引導操作</strong><p>StarFly 需要暫時關閉行動數據時，捷徑會處理關閉；連線準備完成後，再執行開啟行動數據的捷徑。iOS 會返回 StarFly 繼續偵測。</p></div></div><div class="shortcut-note"><strong>安全提醒</strong><span>此捷徑會切換行動數據狀態；請先查看捷徑動作內容，只加入你信任的捷徑。若你只用 Wi‑Fi，無須安裝或啟用它。</span></div></div>
+      </div>
+    </section>
+
+    <section class="section wrap" id="help">
+      <div class="section-heading"><div><div class="eyebrow">TROUBLESHOOTING</div><h2>遇到問題？先看這裡</h2></div><p>按下方問題展開排查方法；求助時請遮住 Apple ID、驗證碼與授權序號。</p></div>
+      <div class="faq-list">
+        <details><summary>Sideloadly 看不到 iPhone，怎麼辦？</summary><div><p>解鎖 iPhone、重新插拔資料線，並在手機端允許「信任此電腦」。確認電腦已安裝 Sideloadly 官方要求的 Apple 裝置元件；重新啟動 Sideloadly 和電腦後再試。不要下載不明的驅動程式。</p></div></details>
+        <details><summary>安裝成功，但跳出「未受信任的開發者」？</summary><div><p>先取消提示，再到「設定 → 一般 → VPN 與裝置管理 → 開發者 App」，選取你剛才在 Sideloadly 使用的開發者並按「信任」。信任前先確認 IPA 來源和開發者身分。</p></div></details>
+        <details><summary>StarFly 七天後打不開或顯示無法驗證？</summary><div><p>免費 Apple ID 的簽署效期通常為 7 天，且同時可側載的 App 數量有限。用同一個 Apple ID 重新側載最新版 IPA，或事先在 Sideloadly 啟用自動刷新並確保電腦能偵測 iPhone。更新時不要先刪除舊 App，否則可能清掉本機設定並需要重新配對。</p></div></details>
+        <details><summary>Pro 要求授權碼，Apple ID 可以代替嗎？</summary><div><p>不可以。Apple ID 只供 Sideloadly 簽署；Pro 授權碼是另一項裝置授權。免費版不需要購買 Pro 授權。請透過官方 LINE <a href="https://line.me/R/ti/p/@689whbkl" target="_blank" rel="noopener noreferrer">@689whbkl</a> 洽詢 Pro 方案。不要在公開頁面張貼完整授權碼。</p></div></details>
+        <details><summary>LocalDevVPN 顯示已連線，StarFly 還是找不到 iPhone？</summary><div><p>確認配對的是目前這部實體 iPhone，允許 StarFly 使用本機網路，並確認 LocalDevVPN 通道仍開啟。Wi‑Fi 請使用 Wi‑Fi 連線流程；只有真的在使用 4G／5G 時才選行動數據流程。前往 StarFly「設定 → 連線診斷」可查看狀態。</p></div></details>
+        <details><summary>更新版本會不會清除我的資料？</summary><div><p>使用相同 Apple ID 安裝相同 StarFly App 的新版 IPA，通常可覆蓋更新並保留 App 資料。不要先刪除 App；若要換簽署帳號或遇到簽章錯誤，先洽官方 LINE 確認再處理。</p></div></details>
+      </div>
+    </section>
+
+    <section class="closing wrap">
+      <div class="closing-mark"><img src="assets/starfly-icon.png" alt="StarFly"></div>
+      <div><div class="eyebrow">NEED A HAND?</div><h2>卡在某一步？官方 LINE 可以協助你。</h2><p>傳送「卡住的步驟編號＋錯誤畫面」即可；請先遮住 Apple ID、驗證碼、授權序號與配對碼。</p></div>
+      <div class="line-cta"><a class="button button-line" href="https://line.me/R/ti/p/@689whbkl" target="_blank" rel="noopener noreferrer">加入官方 LINE ↗</a><button id="copyLine" type="button" aria-label="複製官方 LINE ID">LINE ID <strong>@689whbkl</strong>　複製</button><span id="copyStatus" aria-live="polite"></span></div>
+    </section>
+  </main>
+
+  <footer class="footer wrap" id="sources">
+    <div class="footer-top"><a class="brand footer-brand" href="index.html"><img src="assets/starfly-icon.png" alt=""><span>STARFLY <small>INSTALL GUIDE</small></span></a><span>版本 2.0.0 · Build 61 · 安裝指南 2026.10</span></div>
+    <div class="footer-links"><a href="index.html">StarFly 官網首頁</a><a href="terms.html">服務條款</a><a href="privacy.html">隱私權政策</a><a href="https://sideloadly.io/" target="_blank" rel="noopener noreferrer">Sideloadly 官方網站</a><a href="https://sideloadly.io/faq" target="_blank" rel="noopener noreferrer">Sideloadly 官方 FAQ</a><a href="https://developer.apple.com/documentation/xcode/enabling-developer-mode-on-a-device?language=objc" target="_blank" rel="noopener noreferrer">Apple Developer：Developer Mode</a><a href="https://support.apple.com/zh-tw/118254" target="_blank" rel="noopener noreferrer">Apple Support：手動信任流程（介面參考）</a><a href="https://apps.apple.com/app/localdevvpn/id6755608044" target="_blank" rel="noopener noreferrer">LocalDevVPN App Store</a><a href="https://line.me/R/ti/p/@689whbkl" target="_blank" rel="noopener noreferrer">官方 LINE @689whbkl</a></div>
+    <div class="footer-disclaimer">僅限你擁有或獲得授權的裝置與用途。側載簽章有期限，開發者模式與信任設定會降低部分系統保護；請確認來源可信，測試結束後依需要還原實際位置。</div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

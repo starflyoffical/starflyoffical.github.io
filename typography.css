@@ -1,0 +1,48 @@
+:root {
+  --starfly-font: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+  font-family: var(--starfly-font);
+  font-kerning: normal;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+body,
+button,
+input,
+select,
+textarea,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+summary {
+  font-family: var(--starfly-font);
+}
+
+h1,
+h2 {
+  text-wrap: balance;
+  letter-spacing: -.035em;
+}
+
+p,
+li {
+  text-wrap: pretty;
+}
+
+h1 em,
+h2 em,
+h3 em {
+  font-family: inherit;
+  font-style: normal;
+}
+
+@media (max-width: 640px) {
+  h1,
+  h2 {
+    letter-spacing: -.025em;
+  }
+}
