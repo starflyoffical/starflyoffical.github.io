@@ -1,24 +1,138 @@
 <!doctype html>
 <html lang="zh-Hant">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#09111d">
-  <meta name="description" content="StarFly App 下載說明：透過 TestFlight 安裝與更新。">
-  <title>App 下載｜StarFly</title><link rel="icon" href="assets/starfly-icon.png" type="image/png"><link rel="stylesheet" href="site.css"><link rel="stylesheet" href="legal.css"><link rel="stylesheet" href="typography.css"><script src="site.js" defer></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#09111d">
+  <meta name="description" content="StarFly TestFlight 安裝、首次配對、LocalDevVPN 與行動數據捷徑完整教學。">
+  <title>安裝與設定教學｜StarFly</title>
+  <link rel="icon" href="assets/starfly-icon.png" type="image/png">
+  <link rel="stylesheet" href="site.css">
+  <link rel="stylesheet" href="legal.css">
+  <link rel="stylesheet" href="typography.css">
+  <link rel="stylesheet" href="install-guide.css">
+  <script src="site.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">跳至主要內容</a>
-  <header class="site-header" id="top"><a class="wordmark" href="index.html"><span class="brand-mark"><img src="assets/starfly-icon.png" alt=""></span><span>STARFLY<small>APP DOWNLOAD</small></span></a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="開啟導覽選單"><span></span><span></span></button><nav class="primary-nav" id="primary-nav" aria-label="主要導覽"><a href="index.html#features">功能</a><a href="index.html#plans">授權方案</a><a href="https://testflight.apple.com/join/sr3w7648" target="_blank" rel="noopener noreferrer">App 下載</a><a href="terms.html">服務條款</a><a href="privacy.html">隱私權政策</a><a class="nav-contact" href="https://line.me/R/ti/p/@689whbkl" target="_blank" rel="noopener noreferrer">官方 LINE ↗</a></nav></header>
-  <main id="main" class="legal-main section-shell">
-    <div class="legal-hero reveal"><p class="eyebrow">TESTFLIGHT · STARFLY</p><h1>下載 StarFly App</h1><p>StarFly 透過 Apple TestFlight 安裝與更新。先安裝 TestFlight，再開啟 StarFly 提供的邀請連結即可下載 App。</p><p><a class="button button-gold" href="https://testflight.apple.com/join/sr3w7648" target="_blank" rel="noopener noreferrer">立即下載 StarFly App ↗</a></p><div class="legal-meta"><span>安裝方式：Apple TestFlight</span><span>授權方案：週／月／三個月</span></div></div>
-    <aside class="legal-alert reveal"><strong>使用 TestFlight 下載</strong><p>請在 iPhone 安裝 TestFlight，然後開啟 StarFly 提供的邀請連結並依畫面安裝。請勿向任何人提供 Apple ID 密碼或驗證碼。</p></aside>
-    <nav class="legal-toc reveal" aria-label="本頁內容"><a href="#join">加入步驟</a><a href="#license">期間授權</a><a href="#help">問題排查</a></nav>
+  <header class="site-header" id="top">
+    <a class="wordmark" href="index.html"><span class="brand-mark"><img src="assets/starfly-icon.png" alt=""></span><span>STARFLY<small>SETUP GUIDE</small></span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="開啟導覽選單"><span></span><span></span></button>
+    <nav class="primary-nav" id="primary-nav" aria-label="主要導覽">
+      <a href="index.html#features">功能</a><a href="index.html#plans">授權方案</a>
+      <a href="https://testflight.apple.com/join/sr3w7648" target="_blank" rel="noopener noreferrer">App 下載</a>
+      <a href="terms.html">服務條款</a><a href="privacy.html">隱私權政策</a>
+      <a class="nav-contact" href="https://line.me/R/ti/p/@689whbkl" target="_blank" rel="noopener noreferrer">官方 LINE ↗</a>
+    </nav>
+  </header>
+
+  <main id="main" class="legal-main section-shell install-guide">
+    <div class="legal-hero reveal">
+      <p class="eyebrow">TESTFLIGHT · FIRST SETUP · CONNECTION</p>
+      <h1>安裝完成，<br><em>再一步步設定 StarFly。</em></h1>
+      <p>使用 Apple TestFlight 安裝與更新 App。初次設定時，依 StarFly 畫面完成授權、裝置配對和連線；使用行動數據時，再選擇加入捷徑。</p>
+      <div class="guide-actions">
+        <a class="button button-gold" href="https://testflight.apple.com/join/sr3w7648" target="_blank" rel="noopener noreferrer">開啟 TestFlight 邀請 ↗</a>
+        <a class="button button-outline" href="#first-setup">查看首次設定</a>
+      </div>
+      <div class="legal-meta"><span>iPhone 安裝：TestFlight</span><span>LocalDevVPN：App Store</span><span>行動數據捷徑：選用</span></div>
+    </div>
+
+    <aside class="legal-alert reveal"><strong>本頁使用 TestFlight 版本</strong><p>不需要下載 IPA、電腦簽署或信任企業開發者。App 更新請在 iPhone 的 TestFlight 中完成。若你已安裝 App，先不要刪除；直接從 TestFlight 查看是否有更新。</p></aside>
+
+    <nav class="legal-toc reveal" aria-label="教學章節">
+      <a href="#install">安裝 App</a><a href="#first-setup">首次設定</a><a href="#vpn">LocalDevVPN</a><a href="#shortcut">行動數據捷徑</a><a href="#troubleshoot">問題排查</a>
+    </nav>
+
     <article class="legal-content">
-      <section class="reveal" id="join"><span class="legal-num">01</span><div><h2>安裝 StarFly App</h2><ol><li>在 iPhone 上安裝 Apple TestFlight。</li><li>使用 iPhone 開啟 StarFly 提供的 TestFlight 邀請連結。</li><li>在 TestFlight 頁面接受邀請並按下安裝。</li><li>後續更新在 TestFlight 的 StarFly 頁面查看並安裝。</li></ol><p>若 TestFlight 顯示邀請失效或名額已滿，請聯絡 StarFly 支援。</p></div></section>
-      <section class="reveal" id="license"><span class="legal-num">02</span><div><h2>期間授權與購買</h2><p>StarFly 採一次性期間授權，不自動續訂。週方案 NT$30（7 天）、月方案 NT$100（1 個月）、三個月方案 NT$250（3 個月）。</p><p>購買前請在官方 LINE 確認方案、付款方式、授權效期與交付內容；確認後再付款。<a href="index.html#plans">查看授權方案與價格</a>。</p></div></section>
-      <section class="reveal" id="help"><span class="legal-num">03</span><div><h2>無法加入或安裝</h2><ul><li>確認 iPhone 已登入可使用 TestFlight 的 Apple 帳號，並從邀請訊息開啟測試頁。</li><li>若 TestFlight 顯示邀請過期、測試已滿或無法安裝，請把畫面截圖傳給官方 LINE，並遮住個人帳號資訊。</li><li>授權或 App 連線問題請附上 StarFly 顯示的錯誤文字。請勿傳送 Apple ID 密碼、雙重認證碼、完整授權密鑰或裝置配對碼。</li></ul></div></section>
+      <section id="install" class="reveal">
+        <span class="legal-num">01</span>
+        <div>
+          <h2>透過 TestFlight 安裝與更新</h2>
+          <p>請在 iPhone 操作。TestFlight 是 Apple 提供的測試版 App 安裝與更新工具。</p>
+          <ol>
+            <li>在 App Store 搜尋並安裝「TestFlight」。</li>
+            <li>在 iPhone 開啟 <a href="https://testflight.apple.com/join/sr3w7648" target="_blank" rel="noopener noreferrer">StarFly TestFlight 邀請連結</a>。</li>
+            <li>在 TestFlight 接受邀請，按「安裝」並等待完成。</li>
+            <li>之後要更新時，開啟 TestFlight，找到 StarFly 並按「更新」。</li>
+          </ol>
+          <p class="guide-note"><strong>邀請無法使用？</strong>若畫面顯示測試已滿、邀請失效或版本不可用，將畫面截圖傳給<a href="https://line.me/R/ti/p/@689whbkl" target="_blank" rel="noopener noreferrer">官方 LINE</a>協助確認。</p>
+        </div>
+      </section>
+
+      <section id="first-setup" class="reveal">
+        <span class="legal-num">02</span>
+        <div>
+          <h2>首次開啟與裝置配對</h2>
+          <p>一般瀏覽功能可先開啟使用。只有當 StarFly 的位置功能提示需要配對時，再照以下步驟設定。配對是位置功能的準備流程，與 TestFlight 安裝分開。</p>
+          <ol>
+            <li>若使用需要授權的功能，輸入已取得的授權密鑰並完成啟用；密鑰綁定後請勿公開分享。</li>
+            <li>在 StarFly 的「裝置設定」點「配對此 iPhone」，讓 App 保持開啟，依畫面開始配對。</li>
+            <li>如果流程要求開啟開發者模式，前往「設定 → 隱私權與安全性 → 開發者模式」，開啟後依指示重新啟動，再確認啟用。</li>
+            <li>回到該設定頁，在配對裝置清單中選「Pair with StarFly／與 StarFly 配對」，輸入 StarFly 顯示的配對碼並確認。</li>
+            <li>若 iPhone 詢問本機網路權限，允許 StarFly 存取；完成後返回 App 查看連線狀態。</li>
+          </ol>
+          <div class="guide-note"><strong>找不到配對項目：</strong>先確認 StarFly 配對畫面仍開啟，稍候再查看設定。只在自己的裝置上操作；配對碼不要傳給他人。</div>
+          <div class="guide-gallery">
+            <figure><img src="assets/05-device-setup.png" alt="StarFly 裝置設定與配對入口示意"><figcaption>從 StarFly 的裝置設定開始配對。</figcaption></figure>
+            <figure><img src="assets/07-pairing-settings-redacted.png" alt="已遮蔽裝置名稱的 Pair with StarFly 配對項目"><figcaption>依 StarFly 畫面輸入配對碼完成連線。</figcaption></figure>
+          </div>
+        </div>
+      </section>
+
+      <section id="vpn" class="reveal">
+        <span class="legal-num">03</span>
+        <div>
+          <h2>安裝並連接 LocalDevVPN</h2>
+          <p>LocalDevVPN 用於 StarFly 的本機連線流程，不是一般上網 VPN。請只從 App Store 下載。</p>
+          <div class="guide-link-card">
+            <div><span class="guide-kicker">APP STORE</span><h3>LocalDevVPN</h3><p>在目前使用 StarFly 的同一部 iPhone 安裝並開啟。</p></div>
+            <a class="button button-gold" href="https://apps.apple.com/app/localdevvpn/id6755608044" target="_blank" rel="noopener noreferrer">前往 App Store ↗</a>
+          </div>
+          <ol>
+            <li>按上方連結，從 App Store 安裝 LocalDevVPN。</li>
+            <li>開啟 LocalDevVPN。首次連線若 iOS 詢問新增 VPN 設定，確認 App 名稱後依系統提示允許。</li>
+            <li>回到 LocalDevVPN 啟動連線，確認狀態顯示已連線。</li>
+            <li>返回 StarFly，繼續配對或重試原本的連線步驟；位置工作期間依 App 指示保持連線。</li>
+          </ol>
+          <p class="guide-note"><strong>連不上時：</strong>確認 iOS 設定中 StarFly 的「本機網路」權限已開啟，並檢查是否有其他 VPN 或裝置管理設定影響連線。</p>
+        </div>
+      </section>
+
+      <section id="shortcut" class="reveal">
+        <span class="legal-num">04</span>
+        <div>
+          <h2>設定行動數據捷徑 <small>選用</small></h2>
+          <p>「StarFly 網路流程」捷徑配合 StarFly 的行動數據連線引導使用。只使用 Wi‑Fi 的話可略過這一節。</p>
+          <p><a class="button button-gold" href="https://www.icloud.com/shortcuts/21f20ca0ad8946f9ade191c02793a96c" target="_blank" rel="noopener noreferrer">加入 StarFly 網路流程捷徑 ↗</a></p>
+          <ol>
+            <li>在 iPhone 開啟上方 iCloud 捷徑連結，按「取得捷徑／加入捷徑」。</li>
+            <li>在「捷徑」App 確認捷徑已加入，名稱保持「StarFly 網路流程」。</li>
+            <li>回到 StarFly，開啟「控制中心 → 捷徑流程」，輸入完全相同的捷徑名稱。</li>
+            <li>如需自動執行，開啟 StarFly 內對應的自動執行選項；日後依 App 引導操作行動數據流程。</li>
+          </ol>
+          <div class="guide-note guide-note-warn"><strong>先檢查捷徑動作：</strong>捷徑可能會切換行動數據狀態。加入前請確認每個動作都符合你的預期；iOS、電信商或裝置管理設定可能限制部分捷徑動作。Wi‑Fi 使用者不需要啟用此捷徑。</div>
+        </div>
+      </section>
+
+      <section id="troubleshoot" class="reveal">
+        <span class="legal-num">05</span>
+        <div>
+          <h2>常見問題排查</h2>
+          <div class="guide-faq">
+            <details><summary>TestFlight 顯示邀請已滿或無法安裝</summary><p>確認邀請連結是在 iPhone 開啟，並確認 TestFlight 已安裝。若仍顯示名額或邀請問題，截圖後聯絡官方 LINE。</p></details>
+            <details><summary>LocalDevVPN 已連線，StarFly 仍找不到裝置</summary><p>確認操作的是同一部 iPhone、StarFly 的本機網路權限已允許、配對流程仍在等待，且 LocalDevVPN 仍顯示連線中。返回 StarFly 重試；若有其他 VPN，檢查其設定是否衝突。</p></details>
+            <details><summary>配對碼逾時或設定中看不到 StarFly</summary><p>回到 StarFly 重新開始配對並使用新配對碼，讓 App 保持前景，再查看 iPhone 設定。不要重複使用已過期的配對碼。</p></details>
+            <details><summary>行動數據捷徑沒有執行</summary><p>確認捷徑名稱與 StarFly 設定完全相同，並檢查 iOS 是否允許捷徑中的動作。若使用 Wi‑Fi，略過捷徑並選擇 Wi‑Fi 流程。</p></details>
+            <details><summary>更新 StarFly 會清除資料嗎？</summary><p>直接從 TestFlight 更新即可。若遇到更新錯誤，先保留 App 並聯絡官方 LINE，不要先刪除 App。</p></details>
+          </div>
+        </div>
+      </section>
     </article>
-    <section class="contact-section reveal"><div class="contact-orbit" aria-hidden="true"></div><p class="eyebrow">APP DOWNLOAD</p><h2>用 TestFlight<br><em>安裝與更新 StarFly。</em></h2><p>在 iPhone 開啟 StarFly 提供的 TestFlight 邀請連結，即可下載 App。期間授權與付款問題請洽官方 LINE。</p><a class="button button-gold" href="index.html#plans">查看授權方案 ↗</a><span class="contact-id">LINE ID&nbsp; @689whbkl</span></section>
+
+    <section class="contact-section reveal"><div class="contact-orbit" aria-hidden="true"></div><p class="eyebrow">NEED A HAND?</p><h2>卡在某一步？<br><em>官方 LINE 協助你。</em></h2><p>傳送步驟編號和錯誤畫面；請先遮住授權密鑰、配對碼及個人帳號資訊。</p><a class="button button-gold" href="https://line.me/R/ti/p/@689whbkl" target="_blank" rel="noopener noreferrer">聯絡官方 LINE ↗</a><span class="contact-id">LINE ID&nbsp; @689whbkl</span></section>
   </main>
-  <footer class="site-footer"><div class="footer-main section-shell"><a class="wordmark footer-wordmark" href="index.html"><span class="brand-mark"><img src="assets/starfly-icon.png" alt=""></span><span>STARFLY<small>YOUR ROUTE, YOUR RHYTHM</small></span></a><p>App 下載說明</p><nav aria-label="頁尾導覽"><a href="index.html">首頁</a><a href="index.html#plans">授權方案</a><a href="https://testflight.apple.com/join/sr3w7648" target="_blank" rel="noopener noreferrer">App 下載</a><a href="terms.html">服務條款</a><a href="privacy.html">隱私權政策</a><a href="https://line.me/R/ti/p/@689whbkl" target="_blank" rel="noopener noreferrer">官方 LINE ↗</a></nav></div><div class="footer-bottom section-shell"><span>© <span data-current-year>2026</span> StarFly</span><span>StarFly 為獨立第三方工具。</span><a href="#top">回到頁首 ↑</a></div></footer>
+
+  <footer class="site-footer"><div class="footer-main section-shell"><a class="wordmark footer-wordmark" href="index.html"><span class="brand-mark"><img src="assets/starfly-icon.png" alt=""></span><span>STARFLY<small>YOUR ROUTE, YOUR RHYTHM</small></span></a><p>安裝與設定教學</p><nav aria-label="頁尾導覽"><a href="index.html">首頁</a><a href="index.html#plans">授權方案</a><a href="https://testflight.apple.com/join/sr3w7648" target="_blank" rel="noopener noreferrer">App 下載</a><a href="terms.html">服務條款</a><a href="privacy.html">隱私權政策</a><a href="https://line.me/R/ti/p/@689whbkl" target="_blank" rel="noopener noreferrer">官方 LINE ↗</a></nav></div><div class="footer-bottom section-shell"><span>© <span data-current-year>2026</span> StarFly</span><span>StarFly 為獨立第三方工具。</span><a href="#top">回到頁首 ↑</a></div></footer>
 </body>
 </html>
