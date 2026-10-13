@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#09111d">
+  <meta name="description" content="StarFly 各項功能的操作指南：位置模擬、座標、路線、地圖探索、三點定位、健康步數與設定。">
+  <title>功能使用指南｜StarFly</title>
+  <link rel="icon" href="assets/starfly-icon.png" type="image/png">
+  <link rel="stylesheet" href="site.css">
+  <link rel="stylesheet" href="legal.css">
+  <link rel="stylesheet" href="install-guide.css">
+  <link rel="stylesheet" href="guide.css">
+  <script src="site.js" defer></script>
+  <script src="guide.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳至主要內容</a>
+  <header class="site-header" id="top">
+    <a class="wordmark" href="index.html" aria-label="StarFly 首頁">
+      <span class="brand-mark"><img src="assets/starfly-icon.png" alt=""></span>
+      <span>STARFLY<small>FEATURE GUIDE</small></span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="開啟導覽選單"><span></span><span></span></button>
+    <nav class="primary-nav" id="primary-nav" aria-label="主要導覽">
+      <a href="index.html#features">功能</a><a href="guide.html" aria-current="page">使用指南</a><a href="install.html">安裝教學</a>
+      <a href="https://testflight.apple.com/join/sr3w7648" target="_blank" rel="noopener noreferrer">App 下載</a>
+      <a class="nav-contact" href="https://line.me/R/ti/p/@689whbkl" target="_blank" rel="noopener noreferrer">洽詢 LINE <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main id="main" class="legal-main section-shell guide-page">
+    <div class="legal-hero guide-hero reveal">
+      <p class="eyebrow">STARFLY · FEATURE GUIDE</p>
+      <h1>每個功能，<br><em>都從清楚的一步開始。</em></h1>
+      <p>依照畫面上的功能名稱，快速查找操作步驟。從挑選位置、建立路線，到三點定位與連線設定，都整理在這裡。</p>
+      <div class="guide-actions">
+        <a class="button button-gold" href="#quick-start">先看快速開始 <span aria-hidden="true">↓</span></a>
+        <a class="button button-outline" href="install.html">安裝與配對教學</a>
+      </div>
+      <div class="legal-meta"><span>iPhone 專用</span><span>TestFlight 安裝</span><span>繁體中文操作說明</span></div>
+    </div>
+
+    <aside class="legal-alert guide-alert reveal">
+      <strong>先完成 iPhone 配對，再開始位置功能</strong>
+      <p>位置模擬和步行路線需要在 iPhone 上完成裝置配對及 LocalDevVPN 設定。iPad 目前不是支援的配對裝置。<a href="install.html">查看安裝與配對步驟 →</a></p>
+    </aside>
+
+    <div class="guide-search reveal">
+      <label for="guide-search-input">搜尋操作說明</label>
+      <div class="guide-search-field"><span aria-hidden="true">⌕</span><input id="guide-search-input" type="search" placeholder="輸入功能名稱，例如：GPX、三點定位、步數" autocomplete="off"><button id="guide-search-clear" type="button" hidden>清除</button></div>
+      <p id="guide-search-status" aria-live="polite">共 17 項功能說明</p>
+    </div>
+
+    <nav class="legal-toc guide-toc reveal" aria-label="指南章節">
+      <a href="#quick-start">快速開始</a><a href="#locations">位置與收藏</a><a href="#routes">路線與步行</a><a href="#explore">地圖探索</a><a href="#tools">設定與工具</a>
+    </nav>
+
+    <section id="quick-start" class="guide-section reveal">
+      <div class="guide-section-heading"><span class="legal-num">01</span><div><p class="guide-kicker">START HERE</p><h2>三步開始使用</h2><p>先選位置，再啟動；需要走路路線時，先預覽再開始。</p></div></div>
+      <div class="guide-steps">
+        <article><span>01</span><h3>選擇位置</h3><p>搜尋地名、點選地圖，或按上方「定位」輸入緯度與經度。</p></article>
+        <article><span>02</span><h3>確認位置卡</h3><p>查看地點名稱與座標；要留作日後使用，可點愛心加入最愛。</p></article>
+        <article><span>03</span><h3>開始或預覽</h3><p>固定位置按「開始」；步行路線先按「預覽路線」，確認後再開始。</p></article>
+      </div>
+      <p class="guide-footnote">停止位置模擬時，使用主畫面的停止控制並依提示還原實際位置。位置模擬功能需先完成 iPhone 配對。</p>
+    </section>
+
+    <section id="locations" class="guide-section reveal">
+      <div class="guide-section-heading"><span class="legal-num">02</span><div><p class="guide-kicker">LOCATION & SAVED PLACES</p><h2>位置與收藏</h2><p>使用目前地點、精確座標或常用地點開始固定位置。</p></div></div>
+      <div class="guide-feature-grid">
+        <details class="guide-feature" data-guide-item data-search="搜尋地點 地圖 選擇位置 固定定位 地址 搜尋列">
+          <summary><span class="guide-icon">⌖</span><span><small>MAP</small><strong>搜尋或選取地圖位置</strong><em>搜尋地名，或直接在地圖放置位置標記。</em></span><i aria-hidden="true">＋</i></summary>
+          <div class="guide-feature-body"><ol><li>在主畫面搜尋列輸入地點、地址或座標，點選搜尋結果；也可以直接點地圖。</li><li>檢查底部位置卡上的地點名稱與座標。</li><li>按「開始」啟動固定位置。若已有工作階段，選新位置後按「更新位置」。</li><li>結束時按停止控制，選擇還原實際位置。</li></ol></div>
+        </details>
+        <details class="guide-feature" data-guide-item data-search="精確座標 緯度 經度 手動輸入 座標">
+          <summary><span class="guide-icon">◎</span><span><small>COORDINATE</small><strong>輸入精確座標</strong><em>直接輸入緯度、經度，適合已知座標的地點。</em></span><i aria-hidden="true">＋</i></summary>
+          <div class="guide-feature-body"><ol><li>按主畫面上方「定位」。</li><li>分別輸入緯度和經度，例如 <code>25.033964</code>、<code>121.564468</code>。</li><li>可填寫顯示名稱，按「鎖定這個位置」後回到地圖。</li><li>確認位置後按「開始」。座標只用於目前工作階段，若要留存可加入最愛。</li></ol></div>
+        </details>
+        <details class="guide-feature" data-guide-item data-search="固定位置 開始 更新 停止 還原真實位置">
+          <summary><span class="guide-icon">◉</span><span><small>FIXED LOCATION</small><strong>固定位置模擬</strong><em>讓位置停留在選定座標，或直接更新至另一個位置。</em></span><i aria-hidden="true">＋</i></summary>
+          <div class="guide-feature-body"><ol><li>先搜尋或選取一個位置。</li><li>點位置卡上的「開始」並依畫面完成 LocalDevVPN 連線。</li><li>連線成功後，新的位置會持續生效；換地點時選擇新位置並按「更新位置」。</li><li>要結束時選「停止並還原」，依提示留在 StarFly 等待還原完成。</li></ol></div>
+        </details>
+        <details class="guide-feature" data-guide-item data-search="最愛 收藏 歷史紀錄 已儲存位置 路徑重新命名 排序">
+          <summary><span class="guide-icon">♡</span><span><small>FAVOURITES & HISTORY</small><strong>最愛、路徑與歷史紀錄</strong><em>在「更多 → 收藏與紀錄」管理常用資料。</em></span><i aria-hidden="true">＋</i></summary>
+          <div class="guide-feature-body"><ul><li>在位置卡點愛心收藏地點；在收藏清單可重新命名、刪除或重新排序。</li><li>收藏路徑可再次載入或編輯；在路徑項目上滑可開啟操作。</li><li>歷史紀錄會列出最近使用過的位置，可重新選取或刪除。</li><li>清除資料前先確認清除對話框中的項目。</li></ul></div>
+        </details>
+      </div>
+    </section>
+
+    <section id="routes" class="guide-section reveal">
+      <div class="guide-section-heading"><span class="legal-num">03</span><div><p class="guide-kicker">ROUTES & WALKING</p><h2>路線與步行</h2><p>建立自訂軌跡、匯入 GPX，或使用花路與附近步行規劃。</p></div></div>
+      <div class="guide-feature-grid">
+        <details class="guide-feature" data-guide-item data-search="建立航線 貼上航線 匯入路線 GPX 座標循環 跳點 移動方式">
+          <summary><span class="guide-icon">↗</span><span><small>PASTE ROUTE / GPX</small><strong>貼上座標或匯入 GPX</strong><em>多組座標可以直接建立路徑，也能匯入 GPX 檔案。</em></span><i aria-hidden="true">＋</i></summary>
+          <div class="guide-feature-body"><ol><li>開啟「更多 → 貼上航線」，輸入路線名稱。</li><li>每行貼一組「緯度, 經度」，例如 <code>25.0330, 121.5654</code>；或按「匯入 GPX」選檔。</li><li>設定循環圈數或無限循環，再選連續移動或逐點跳躍。</li><li>按「建立路徑」。建立後可儲存到收藏路徑，稍後再載入。</li></ol><p>無限循環會在終點與路線間反向返回；若希望閉合一圈，請把起點座標也放在最後一行。</p></div>
+        </details>
+        <details class="guide-feature" data-guide-item data-search="路線編輯器 建立 編輯 waypoint 地圖點選 排序">
+          <summary><span class="guide-icon">⌁</span><span><small>ROUTE EDITOR</small><strong>路線編輯器</strong><em>在地圖逐點建立路線，之後可以修改與重用。</em></span><i aria-hidden="true">＋</i></summary>
+          <div class="guide-feature-body"><ol><li>開啟「更多 → 路線編輯器」，輸入路線名稱。</li><li>搜尋地點或座標，或直接點地圖加入路點；至少需要兩個路點。</li><li>在路點清單調整順序或移除錯誤點。</li><li>按「儲存路線」。之後可到「收藏與紀錄」載入或編輯。</li></ol></div>
+        </details>
+        <details class="guide-feature" data-guide-item data-search="花路列表 期間路線 花種 顏色 搜尋 到期 倒數">
+          <summary><span class="guide-icon">✳</span><span><small>FLOWER ROUTES</small><strong>花路列表</strong><em>瀏覽可用花路，查看路點與剩餘時間。</em></span><i aria-hidden="true">＋</i></summary>
+          <div class="guide-feature-body"><ol><li>選「更多 → 花路列表」，可依名稱、花種或顏色搜尋。</li><li>查看每條路線的路點數與剩餘時間；清單會定期更新。</li><li>點選仍有效的路線載入並開始步行模擬。開始前須完成 iPhone 配對。</li></ol></div>
+        </details>
+        <details class="guide-feature" data-guide-item data-search="附近散步 目的地 步行半徑 速度 預覽 估時 暫停 往返">
+          <summary><span class="guide-icon">歩</span><span><small>NEARBY WALK</small><strong>附近散步</strong><em>設定範圍與速度，規劃循環路線。</em></span><i aria-hidden="true">＋</i></summary>
+          <div class="guide-feature-body"><ol><li>選「更多 → 附近散步」，設定半徑與步行速度。</li><li>先預覽路線，檢查距離與預估時間。</li><li>確認後按「開始模擬步行」。步行中可暫停、繼續或跟隨目前位置。</li><li>抵達後可走回原路、選新地點，或停止並還原實際位置。</li></ol></div>
+        </details>
+      </div>
+    </section>
+
+    <section id="explore" class="guide-section reveal">
+      <div class="guide-section-heading"><span class="legal-num">04</span><div><p class="guide-kicker">MAP & DISCOVERY</p><h2>地圖探索與三點定位</h2><p>瀏覽地圖資料，或用三次距離測量估算目標座標。</p></div></div>
+      <div class="guide-feature-grid">
+        <details class="guide-feature" data-guide-item data-search="純點地圖 公開位置 marker 篩選 搜尋 前往座標">
+          <summary><span class="guide-icon">⌖</span><span><small>PURE SPOTS</small><strong>純點地圖</strong><em>瀏覽公開標記，查看位置並選擇是否前往。</em></span><i aria-hidden="true">＋</i></summary>
+          <div class="guide-feature-body"><ol><li>選「更多 → 純點地圖」，等待地圖載入資料。</li><li>移動地圖或搜尋地點，點標記查看名稱、分類和座標。</li><li>選「飛到此座標」開始固定位置；此操作需要完成配對。</li></ol></div>
+        </details>
+        <details class="guide-feature" data-guide-item data-search="明信片 postcard 地圖 分類 國家 地區 篩選 分享">
+          <summary><span class="guide-icon">▧</span><span><small>POSTCARDS</small><strong>明信片地圖</strong><em>依類別和國家／地區尋找明信片位置。</em></span><i aria-hidden="true">＋</i></summary>
+          <div class="guide-feature-body"><ol><li>選「更多 → 明信片」，使用類別或地區篩選清單。</li><li>點一張明信片查看地點與詳細資料，可收藏或分享。</li><li>若選擇前往其座標，先確認位置並依提示開始模擬。</li></ol></div>
+        </details>
+        <details class="guide-feature" data-guide-item data-search="蘑菇狙擊 mushroom sniper 地圖 篩選 類型 大小 戰鬥 狀態 位置">
+          <summary><span class="guide-icon">◉</span><span><small>MUSHROOM SNIPER</small><strong>蘑菇狙擊</strong><em>在主畫面開啟地圖圖層，篩選並查看蘑菇資訊。</em></span><i aria-hidden="true">＋</i></summary>
+          <div class="guide-feature-body"><ol><li>選「更多 → 蘑菇狙擊」開啟圖層；再次點選可收合。</li><li>選擇地區並用種類、大小、戰鬥狀態或有效時間篩選。</li><li>點地圖標記查看位置與驗證時間。使用「直接前往」前，先確認目標與座標。</li></ol><p>資料載入與更新需要網路。位置模擬前須完成 iPhone 配對。</p></div>
+        </details>
+        <details class="guide-feature guide-feature-highlight" data-guide-item data-search="三點定位 距離 輸入 截圖 OCR 照片 手動 估算 交會 經緯度">
+          <summary><span class="guide-icon">⊙</span><span><small>THREE-POINT LOCATOR</small><strong>三點定位：手動輸入或讀取截圖</strong><em>每一點都能自己輸入距離，或匯入截圖辨識。</em></span><i aria-hidden="true">＋</i></summary>
+          <div class="guide-feature-body"><ol><li>在「更多 → 三點定位」先記錄目前 StarFly 位置。座標會自動帶入目前定位或地圖選取的位置。</li><li>量取目前位置到同一目標的距離，記下遊戲顯示的數字；若用截圖辨識，請在此位置拍下距離畫面。</li><li>選擇「手動輸入」並填公尺數，或選「截圖辨識」匯入照片。OCR 讀取後請核對數字；也可直接修改。</li><li>關閉此頁，在地圖選擇並開始另一個相隔較遠的位置，再回到「更多 → 三點定位」記錄。重複到三筆距離完成，並避免讓三點排成一直線。</li><li>按「計算目標位置」，查看估算座標與距離殘差；可複製座標、在地圖查看或開始模擬。</li></ol><p>三筆距離必須來自同一個目標，並分別對應三個測量位置。截圖辨識只在裝置端進行；距離讀值、位置分布與遊戲取整都會影響精度。</p></div>
+        </details>
+      </div>
+    </section>
+
+    <section id="tools" class="guide-section reveal">
+      <div class="guide-section-heading"><span class="legal-num">05</span><div><p class="guide-kicker">SETTINGS & SUPPORT</p><h2>設定、健康與連線</h2><p>從「更多 → 設定」管理顯示、捷徑、授權、資料與診斷。</p></div></div>
+      <div class="guide-feature-grid">
+        <details class="guide-feature" data-guide-item data-search="配對 iPhone LocalDevVPN 開發者模式 本機網路 PIN 連線">
+          <summary><span class="guide-icon">⌘</span><span><small>PAIRING & CONNECTION</small><strong>iPhone 配對與 LocalDevVPN</strong><em>首次使用位置模擬前完成一次設定。</em></span><i aria-hidden="true">＋</i></summary>
+          <div class="guide-feature-body"><ol><li>打開「配對與連線」，允許本機網路權限，按「配對此 iPhone」。</li><li>依畫面前往 iOS「設定 → 隱私權與安全性 → 開發者模式」，使用 iOS 顯示的配對代碼完成流程。</li><li>安裝並開啟 LocalDevVPN，啟用本機隧道，再回到 StarFly。</li><li>若使用 Wi-Fi，確認 LocalDevVPN 已連線後重試；若使用行動網路，依 StarFly 指引暫時切換行動數據。</li></ol><p>StarFly 的裝置配對流程支援 iPhone；iPad 目前不支援此配對流程。完整圖文請看<a href="install.html">安裝與配對教學</a>。</p></div>
+        </details>
+        <details class="guide-feature" data-guide-item data-search="健康步數 Apple 健康 補登 步數 權限">
+          <summary><span class="guide-icon">＋</span><span><small>HEALTH STEPS</small><strong>健康步數補登</strong><em>手動輸入步數，確認後寫入 Apple 健康。</em></span><i aria-hidden="true">＋</i></summary>
+          <div class="guide-feature-body"><ol><li>打開「步數」或「設定 → 健康步數補登」。</li><li>輸入步數，選擇分成幾筆樣本；首次使用時允許 StarFly 寫入 Apple 健康。</li><li>確認數量與寫入操作。資料會標示 StarFly 來源。</li></ol></div>
+        </details>
+        <details class="guide-feature" data-guide-item data-search="捷徑 行動數據 自動 關閉 開啟 網路流程">
+          <summary><span class="guide-icon">ϟ</span><span><small>SHORTCUTS</small><strong>行動數據捷徑</strong><em>依連線引導自動或手動切換行動數據。</em></span><i aria-hidden="true">＋</i></summary>
+          <div class="guide-feature-body"><ol><li>到「設定 → 捷徑流程」，確認上方捷徑名稱（預設為「StarFly 網路流程」），再按「加入 StarFly 網路捷徑」開啟 iCloud 捷徑。</li><li>在 iOS「捷徑」App 加入流程；若更改了捷徑名稱，請同步更新 StarFly 上方的捷徑名稱。</li><li>回到 StarFly，可先按「測試關閉流程」確認捷徑能執行，再選擇是否在需要時自動執行。</li><li>此捷徑收到 <code>disable-cellular</code> 時會關閉行動數據，其他文字則會開啟。只在實際使用行動數據時關閉；Wi-Fi 情境請使用「重試」或確認 LocalDevVPN 已連線。</li></ol></div>
+        </details>
+        <details class="guide-feature" data-guide-item data-search="設定 外觀 深色 淺色 地圖 衛星 語言 時區 動態島 即時活動">
+          <summary><span class="guide-icon">⚙</span><span><small>DISPLAY & SETTINGS</small><strong>外觀、地圖與即時活動</strong><em>自訂介面語言、地圖樣式、時區與狀態顯示。</em></span><i aria-hidden="true">＋</i></summary>
+          <div class="guide-feature-body"><ul><li>「設定 → 顯示」可選自動／淺色／深色外觀、繁體中文／英文、標準／衛星／混合地圖和時區。</li><li>「動態島與即時活動」可查看定位狀態顯示權限；啟用期間會在鎖定畫面顯示工作階段狀態。</li><li>「StarFly Pro 授權」可查看啟用狀態與效期。</li><li>「重新查看開始導覽」不會清除資料；「重設 StarFly」會清除本機配對與設定。</li></ul></div>
+        </details>
+        <details class="guide-feature" data-guide-item data-search="連線診斷 網路 故障 排查 支援 報告 回饋">
+          <summary><span class="guide-icon">⌁</span><span><small>DIAGNOSTICS & PRIVACY</small><strong>連線診斷與資料隱私</strong><em>檢查連線狀態；診斷回報需由使用者手動提交。</em></span><i aria-hidden="true">＋</i></summary>
+          <div class="guide-feature-body"><ol><li>在「設定 → 連線診斷」執行檢查，可查看配對紀錄與 LocalDevVPN 連線狀態。</li><li>必要時複製狀態報告；若已同意診斷回報，也可手動分享技術資料。</li><li>收藏、歷史、路徑預設保存在 iPhone。只有開啟同步後，活動資料才會同步到 StarFly 後端。</li><li>問題回報請到「設定 → 說明／回饋」，不要在公開訊息貼出授權密鑰、配對資料或私人座標。</li></ol></div>
+        </details>
+      </div>
+    </section>
+
+    <section class="guide-help reveal">
+      <p class="eyebrow">NEED A HAND?</p><h2>還有操作問題？</h2><p>先搜尋上方指南；配對、安裝或授權問題可透過官方 LINE 聯絡。</p>
+      <div class="guide-actions"><a class="button button-gold" href="install.html">查看安裝教學</a><a class="button button-outline" href="https://line.me/R/ti/p/@689whbkl" target="_blank" rel="noopener noreferrer">洽詢官方 LINE ↗</a></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-main section-shell"><a class="wordmark footer-wordmark" href="index.html"><span class="brand-mark"><img src="assets/starfly-icon.png" alt=""></span><span>STARFLY<small>YOUR ROUTE, YOUR RHYTHM</small></span></a><p>操作清楚，<br>每一步都看得見。</p><nav aria-label="頁尾導覽"><a href="index.html">首頁</a><a href="guide.html">功能使用指南</a><a href="install.html">安裝教學</a><a href="terms.html">服務條款</a><a href="privacy.html">隱私權政策</a><a href="https://line.me/R/ti/p/@689whbkl" target="_blank" rel="noopener noreferrer">官方 LINE ↗</a></nav></div>
+    <div class="footer-bottom section-shell"><span>© <span data-current-year>2026</span> StarFly</span><span>StarFly 為獨立第三方工具，與 Pikmin Bloom、Niantic、Apple 無隸屬關係。</span><a href="#top">回到頁首 ↑</a></div>
+  </footer>
+</body>
+</html>
